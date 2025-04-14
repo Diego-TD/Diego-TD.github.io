@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'inter';
+}
+
+header{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    background-color: #FFF;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    border-bottom: solid black;
+}
+
+footer{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #FFF;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-top: solid black;
+}
+
+header a + a {
+    margin-left: 50px;
+}
+
+footer a + a {
+    margin-left: 50px;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#quick-intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 100%;
+    padding: 10px;
+}
+
+#quick-intro-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-right: 20px;
+}
+
+#quick-intro-img{
+    display: flex;
+    align-items: center;
+}
+
+
+img {
+    border-radius: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--stroke-card, rgba(19, 77, 107, 0.25));
+    background: #FFF;
+}
+
+#experience-and-background{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#experience-swe-cards{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+#experience-non-swe-cards{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.card{
+    display: flex;
+    width: 300px;
+    height: 430px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+
+    border-radius: 10px;
+    border: 2px solid var(--stroke-card, rgba(19, 77, 107, 0.25));
+    background: #FFF;
+}
+
+.card-img{
+    height: 280px;
+    width: 100%;
+}
+
+.card-title{
+    font-size: 20px;
+}
+
+.card-description{
+    font-size: 16px;
+}
+
