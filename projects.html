@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +8,263 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="./js/script.js" defer></script>
+
     <title>Projects</title>
 </head>
+
 <body>
     <header>
         <a href="./index.html"><span>Home</span></a>
         <a href="./projects.html"><span>Projects</span></a>
     </header>
-    <main>
-        <div>
+    <div id="notification" class="notification"></div>
+    <main id="project-page-content">
+        <div id="projects-page-title">
             <h1>Projects</h1>
-            <h3>Here's my work.</h3>
-            
+            <h3>Some of my work:</h3>
         </div>
-        
+        <!-- Projects -->
+        <div id="projects-list">
+            <!-- project #1 -->
+            <div class="project">
+                <div class="project-header">
+                    <h1 class="project-title">
+                        Evantum
+                    </h1>
+                    <div class="project-review">
+                        <input type="radio" id="evantum-star3" name="rating-evantum" value="3">
+                        <label for="evantum-star3" class="star">
+                            <svg xmlns="./icons/star-solid.svg" width="20" height="20" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                        </label>
+
+                        <input type="radio" id="evantum-star2" name="rating-evantum" value="2">
+                        <label for="evantum-star2" class="star">
+                            <svg xmlns="./icons/star-solid.svg" width="20" height="20" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                        </label>
+
+                        <input type="radio" id="evantum-star1" name="rating-evantum" value="1">
+                        <label for="evantum-star1" class="star">
+                            <svg xmlns="./icons/star-solid.svg" width="20" height="20" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                        </label>
+                    </div>
+                </div>  
+                    
+                <div class="project-description">
+                    <p><b>Role: </b>CTO</p>
+                    <p><b>Date: </b>April 2024-Present</p>
+                    <br>
+                    <p><b>App where:</b></p>
+                    <ul>
+                        <li>
+                            Entrepreneurs provide services for events.
+                        </li>
+                        <li>
+                            Clients hire services for events.
+                        </li>
+                    </ul>
+                    <br>
+                    <p><b>Objectives:</b></p>
+                    <ul>
+                        <li>
+                            Automate booking and management of services for events.
+                        </li>
+                    </ul>
+                    <br>
+
+                    <p><b>Results:</b></p>
+                    <ul>
+                        <li>
+                            MVP in progress.
+                        </li>
+                        <li>
+                            1 service provider commited.
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-image">
+                    <img src="./img/p_1_evantum.jpg">                
+                </div>      
+            </div>
+
+            <!-- project #2 -->
+            <div class="project">
+                <div class="project-header">
+                    <h1 class="project-title">
+                        FIP
+                    </h1>
+                    <div class="project-review">
+                        <input type="radio" id="fip-star3" name="rating-fip" value="3">
+                        <label for="fip-star3" class="star">
+                            <svg xmlns="./icons/star-solid.svg" width="20" height="20" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                        </label>
+
+                        <input type="radio" id="fip-star2" name="rating-fip" value="2">
+                        <label for="fip-star2" class="star">
+                            <svg xmlns="./icons/star-solid.svg" width="20" height="20" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                        </label>
+
+                        <input type="radio" id="fip-star1" name="rating-fip" value="1">
+                        <label for="fip-star1" class="star">
+                            <svg xmlns="./icons/star-solid.svg" width="20" height="20" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                        </label>
+                    </div>
+                </div>  
+                
+                <div class="project-description">
+                    <p><b>Role: </b>Full-stack Developer</p>
+                    <p><b>Date: </b>January 2025 - Present</p>
+                    <br>
+                    <p>Web app to manage and automate teachers development program at CETYS University.</p>
+                    <br>
+                    <p><b>Tech stack:</b></p>
+                    <ul>
+                        <li>
+                            Frontend: React Js, Vite, Tailwind CSS, Typescript
+                        </li>
+                        <li>
+                            Backend: Java Spring Boot
+                        </li>
+                        <li>
+                            DB: SQLite
+                        </li>
+                    </ul>
+                    <br>
+
+                    <p><b>Objectives:</b></p>
+                    <ul>
+                        <li>
+                            Improve UI-UX on current workflow.
+                        </li>
+                        <li>
+                            Automate diploma creation, saving dozens of hrs a year.
+                        </li>
+                        <li>
+                            Improve data integrity.
+                        </li>
+                    </ul>
+
+                    <br>
+
+                    <p><b>Results:</b></p>
+                    <ul>
+                        <li>
+                            MVP in progress                        
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-image">
+                    <video autoplay muted loop>
+                        <source src="./img/p_2_fip.mp4">
+                    </video>
+                        
+                </div>  
+            </div>
+            
+
+            <!-- project #3 -->
+            <div class="project">
+                <div class="project-header">
+                    <h1 class="project-title">
+                        DDR
+                    </h1>
+                    <div class="project-review">
+                        <input type="radio" id="ddr-star3" name="rating-ddr" value="3">
+                        <label for="ddr-star3" class="star">
+                            <svg xmlns="./icons/star-solid.svg" width="20" height="20" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                        </label>
+
+                        <input type="radio" id="ddr-star2" name="rating-ddr" value="2">
+                        <label for="ddr-star2" class="star">
+                            <svg xmlns="./icons/star-solid.svg" width="20" height="20" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                        </label>
+
+                        <input type="radio" id="ddr-star1" name="rating-ddr" value="1">
+                        <label for="ddr-star1" class="star">
+                            <svg xmlns="./icons/star-solid.svg" width="20" height="20" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                        </label>
+                    </div>
+                </div>  
+                
+                <div class="project-description">
+                    <p><b>Role: </b>Full-stack Developer</p>
+                    <p><b>Date: </b>April 2024 - June2024</p>
+                    <br>
+                    <p>Android mobile app to manage airline bookings.</p>
+                    <br>
+                    <p><b>Tech stack:</b></p>
+                    <ul>
+                        <li>
+                            Frontend: Android Studio - Java
+                        </li>
+                        <li>
+                            Backend: Java Spring Boot, Docker, Google Cloud
+                        </li>
+                        <li>
+                            DB: PostgreSQL
+                        </li>
+                    </ul>
+                    <br>
+
+                    <p><b>Objectives:</b></p>
+                    <ul>
+                        <li>
+                            Develop full-stack App, frontend on android with Java, backend with Java SpringBoot and a PostgreSQL database, to make an airline booking app.
+                        </li>
+                    </ul>
+
+                    <br>
+
+                    <p><b>Results:</b></p>
+                    <ul>
+                        <li>
+                            Full-stack CRUD working.                        
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-image">
+                    <img src="./img/p_3_ddr.jpg">                
+                </div>  
+            </div>
+            
+
+        </div>
+        <!-- work with me form -->
+        <div id="work-with-me-form">
+            <h1>Work with me</h1>
+            <form id="wwm-form-grid" novalidate>
+                <label>Name:</label>
+                <input class="wwm-input" id="wwm-name" type="text">
+
+                <label>Email:</label>
+                <input class="wwm-input" id="wwm-email" type="text">
+
+                <label>Age:</label>
+                <input class="wwm-input" id="wwm-age" type="text">
+
+                <label>Occupation:</label>
+                <select class="wwm-input" id="wwm-occupation" name="occupations">
+                    <option value="Student">Student</option>
+                    <option value="Professor">Professor</option>
+                    <option value="Back-end">Back-end</option>
+                    <option value="Front-end">Front-end</option>
+                    <option value="Full-Stack">Full-Stack</option>
+                    <option value="DevOps">DevOps</option>
+                    <option value="Cybersecurity">Cybersecurity</option>
+                    <option value="UI-UX">UI-XU design</option> 
+                    <option value="AI-ML">AI-ML</option>
+                    <option value="Software-Architect">Software-Architect</option>                           
+                    <option value="Business">Business</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Brand-design">Brand-design</option>
+                    <option value="Digital-design">Digital-design</option>
+                    <option value="Legal">Legal</option>                            
+                </select>
+
+                <button id="wwm-btn" class="submit-btn">Work with me</button>
+            </form>
+        </div>
+
     </main>
     <footer>
         <a href="https://www.linkedin.com/in/diego-torres-durante/"><span>LinkedIn</span></a>
@@ -28,4 +272,5 @@
         <a href="mailto:diegotorresdurante@gmail.com"><span>email</span></a>
     </footer>
 </body>
+
 </html>
