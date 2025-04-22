@@ -34,6 +34,30 @@ footer{
     border-top: solid black;
 }
 
+a:link {
+    color: #000;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:visited {
+    color: #000;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #134D6B;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
 header a + a {
     margin-left: 50px;
 }
